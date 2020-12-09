@@ -1,0 +1,164 @@
+
+body{
+
+	background: grey;
+	margin: 0;
+	padding: 0;
+}
+
+
+#container{
+
+	width: 85%;
+	background: #FFF;
+	margin: 0 auto;
+	min-width: 720px; /*Minimo de largura*/
+	/*max-width: 800px; máximo de largura*/
+	
+}
+
+
+#logo{
+
+	background: url(banner3.png) top;
+	width: 100%;
+	height: 200px;
+	color: white;
+	font-weight: bold;
+	line-height: 200px;
+	text-align: center;
+	text-shadow: -1px 0 blue, 0 1px blue,
+     1px 0 blue, 0 -1px blue; /*Fazer o contorno na letra, aplicando formatação de sombra*/
+
+}
+
+
+/*25% + 73 = 98 2% é para o espaço | 180 * 100 /700 = 25 | as vezes devemos diminuir para poder caber*/
+
+#navegacao{
+
+	background: black;
+	float: left;
+	width: 25%;
+
+
+}
+
+/*Começo conteúdo*/
+
+#conteudo{
+
+	float: right;
+	width: 73%;/*era 520px mas convertemos utilizamos 520px x 100 / 700px*/
+
+}
+
+#conteudo-principal{
+
+	float: left;
+	width: 64%;
+
+}
+
+/*Serve para deixar a imagem alinhada com o conteúdo sem fazer a quebra*/
+
+img.imagem-conteudo{
+
+	width: 90%;
+	padding: 2%;
+	max-width: 700px; /*O tamanho máximo da imagem é 700px, então não pode utrapasssar para não ficar com baixa qualidade*/
+
+}
+
+.leia-mais a{
+
+	background: black;
+	color: white;
+	text-decoration: none;
+
+
+}
+
+
+
+#conteudo-secundario{
+
+	background: #EEE9E9;
+	float: right; /*Alinhando para direita*/
+	width: 34%;
+	text-align: center;
+
+	
+}
+
+/*Final conteúdo*/
+
+#rodape{
+
+	clear: both;/*limpar a formatação do float da navegação & conteúdo*/
+	color: white;
+	background: black;
+	text-align: center;
+	padding: 20px;
+}
+
+
+
+/*Formatação link de navegação*/
+
+
+#navegacao ul{
+
+	list-style: none;
+	
+
+}
+
+
+#navegacao li a{
+
+	text-decoration: none;
+	
+}
+
+
+#navegacao a{
+
+	font-size: 20px;
+	color: white;
+
+
+
+}
+
+#navegacao a:hover{
+
+	background: black;
+	color: blue;
+
+
+
+}
+
+
+/*Formatação de links "conteudo-secundario"*/
+
+
+#conteudo-secundario ul{
+
+	list-style-type: none;
+}
+
+
+#conteudo-secundario li a{
+
+	text-decoration: none;
+	color: blue;
+
+}
+
+#conteudo-secundario a:hover{
+
+	
+	color: green;	
+}
